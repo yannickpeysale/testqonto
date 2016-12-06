@@ -38,7 +38,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Gpi-Bg-mAF" id="7Mk-pM-ERU"/>
-                                    <segue destination="cla-dX-wBj" kind="show" id="0Ba-Qk-ZDX"/>
+                                    <segue destination="cla-dX-wBj" kind="show" identifier="albumsSegue" id="0Ba-Qk-ZDX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="k9V-b4-7Mt" customClass="AlbumCell" customModule="qontoTest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" id="k9V-b4-7Mt" customClass="AlbumCell" customModule="qontoTest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9V-b4-7Mt" id="0RE-lw-xXG">

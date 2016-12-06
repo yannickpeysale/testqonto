@@ -47,7 +47,8 @@ class UsersTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "albumsSegue" {
-            (segue.destination as! AlbumsTableViewController)
+            let userId = self.users![self.tableView.indexPathForSelectedRow!.row].id
+            (segue.destination as! AlbumsTableViewController).userId = userId
         }
     }
 
