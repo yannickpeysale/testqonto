@@ -38,6 +38,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Gpi-Bg-mAF" id="7Mk-pM-ERU"/>
+                                    <segue destination="cla-dX-wBj" kind="show" id="0Ba-Qk-ZDX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,22 +53,39 @@
             </objects>
             <point key="canvasLocation" x="569" y="-43"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Albums Table View Controller-->
         <scene sceneID="xML-fJ-0hP">
             <objects>
-                <tableViewController id="cla-dX-wBj" sceneMemberID="viewController">
+                <tableViewController id="cla-dX-wBj" customClass="AlbumsTableViewController" customModule="qontoTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hlz-Oa-evz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="k9V-b4-7Mt">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="k9V-b4-7Mt" customClass="AlbumCell" customModule="qontoTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9V-b4-7Mt" id="0RE-lw-xXG">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-Dh-6KE">
+                                            <frame key="frameInset" minX="8" minY="11" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="T3u-Dh-6KE" secondAttribute="trailing" constant="10" id="BSx-Jj-ei8"/>
+                                        <constraint firstItem="T3u-Dh-6KE" firstAttribute="leading" secondItem="0RE-lw-xXG" secondAttribute="leading" constant="10" id="FNN-zl-pw0"/>
+                                        <constraint firstAttribute="bottom" secondItem="T3u-Dh-6KE" secondAttribute="bottom" constant="10" id="IHu-ca-XUB"/>
+                                        <constraint firstItem="T3u-Dh-6KE" firstAttribute="top" secondItem="0RE-lw-xXG" secondAttribute="top" constant="10" id="TQn-46-qKn"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumNameLabel" destination="T3u-Dh-6KE" id="Qzd-Lf-KPE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,7 +96,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEV-vQ-0zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="-43"/>
+            <point key="canvasLocation" x="1649" y="-44"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nbh-ja-bhI">

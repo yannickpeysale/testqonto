@@ -18,6 +18,8 @@
 		266B2C361DF72DEC00064ECD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B2C351DF72DEC00064ECD /* UsersTableViewController.swift */; };
 		266B2C3A1DF7308D00064ECD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B2C391DF7308D00064ECD /* UserCell.swift */; };
 		266B2C3E1DF736A700064ECD /* UserRestDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B2C3D1DF736A700064ECD /* UserRestDAO.swift */; };
+		266B2C401DF73A5700064ECD /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B2C3F1DF73A5700064ECD /* AlbumsTableViewController.swift */; };
+		266B2C421DF73A9D00064ECD /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B2C411DF73A9D00064ECD /* AlbumCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		266B2C351DF72DEC00064ECD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		266B2C391DF7308D00064ECD /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		266B2C3D1DF736A700064ECD /* UserRestDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRestDAO.swift; sourceTree = "<group>"; };
+		266B2C3F1DF73A5700064ECD /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
+		266B2C411DF73A9D00064ECD /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			children = (
 				266B2C351DF72DEC00064ECD /* UsersTableViewController.swift */,
 				266B2C391DF7308D00064ECD /* UserCell.swift */,
+				266B2C3F1DF73A5700064ECD /* AlbumsTableViewController.swift */,
+				266B2C411DF73A9D00064ECD /* AlbumCell.swift */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -190,8 +196,10 @@
 				266B2C341DF72BE000064ECD /* UserParser.swift in Sources */,
 				266B2C361DF72DEC00064ECD /* UsersTableViewController.swift in Sources */,
 				266B2C2C1DF72A1900064ECD /* NetworkManager.swift in Sources */,
+				266B2C401DF73A5700064ECD /* AlbumsTableViewController.swift in Sources */,
 				266B2C1A1DF726DB00064ECD /* AppDelegate.swift in Sources */,
 				266B2C3E1DF736A700064ECD /* UserRestDAO.swift in Sources */,
+				266B2C421DF73A9D00064ECD /* AlbumCell.swift in Sources */,
 				266B2C2E1DF72A3F00064ECD /* Constants.swift in Sources */,
 				266B2C3A1DF7308D00064ECD /* UserCell.swift in Sources */,
 			);
